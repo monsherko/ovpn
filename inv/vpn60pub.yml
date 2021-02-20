@@ -1,0 +1,36 @@
+---
+all:
+  children:
+    ovpn_servers:
+      hosts:
+        185.36.190.49:
+          ansible_ssh_private_key_file: /root/.ssh/id_rsa
+          ansible_python_interpreter: "/usr/bin/python3"
+          openvpn_proto: tcp
+          openvpn_port: 9030
+          openvpn_server_network: 10.60.0.0
+          openvpn_server_netmask: 255.255.255.0
+          openvpn_redirect_gateway: false
+          openvpn_torsocks5_gateway: 172.23.0.1
+          rules_prerouting:
+            - "185.36.190.49:8080:10.60.0.10:2222:tcp"
+    ovpn_clients:
+      hosts:
+        alpha-60:
+          openvpn_client_ip: 10.60.0.10
+        bravo-60:
+          openvpn_client_ip: 10.60.0.15
+        charlie-60:
+          openvpn_client_ip: 10.60.0.20
+        delta-60:
+          openvpn_client_ip: 10.60.0.25
+        echo-60:
+          openvpn_client_ip: 10.60.0.30
+        foxtrot-60:
+          openvpn_client_ip: 10.60.0.35
+        golf-60:
+          openvpn_client_ip: 10.60.0.40
+        hotel-60:
+          openvpn_client_ip: 10.60.0.45
+        oscar-60:
+          openvpn_client_ip: 10.60.0.50

@@ -1,0 +1,5 @@
+F ANSIBLE.CFG;1                                                                                                                                                                                                   	ansible.cfg
+D INV                                                                                                                                                                                                             	inv
+F OVPN_SET.YML;1                                                                                                                                                                                                  	ovpn-setup.yml
+F PUSH_DEC.;1                                                                                                                                                                                                     	push_decoy,yml
+D ROLES                                                                                                                                                                                                           	roles

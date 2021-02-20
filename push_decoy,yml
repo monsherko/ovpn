@@ -1,0 +1,7 @@
+- name:
+  hosts: decoy_service # These are dynamically generated groups from the plugin
+  gather_facts: yes
+  tasks:
+    - name: Generation Decoy
+      with_items: " {{ decoy_path || default([]) }} "
+      command: python3 -m decoysrvc -d "{{ items }}" -o "{{decoy_config_out}}"/decoy.log & cp "{{ items }}" /var/log/  

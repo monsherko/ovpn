@@ -1,0 +1,4 @@
+F SETUP_CE.;1                                                                                                                                                                                                     	setup-centos
+F SETUP_FE.;1                                                                                                                                                                                                     	setup-fedora
+F SETUP_UB.;1                                                                                                                                                                                                     	setup-ubuntu
+F TEST.YML;1                                                                                                                                                                                                      	test.yml

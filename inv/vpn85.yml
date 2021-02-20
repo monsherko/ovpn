@@ -1,0 +1,65 @@
+---
+all:
+  children:
+    ovpn_servers:
+      hosts:
+        'sher1':
+          openvpn_server_hostname: 185.161.209.135
+          ansible_password: eFeNnjEce9
+          openvpn_proto: tcp
+          openvpn_port: 8594
+          openvpn_server_network: 10.85.0.0
+          # openvpn_server_netmask: 255.255.255.0
+          openvpn_redirect_gateway: false
+    ovpn_clients:
+      hosts:
+        alpha-85:
+          openvpn_host: 10.85.0.100
+        bravo-85:
+          openvpn_host: 10.85.0.101
+        charlie-85:
+          openvpn_host: 10.85.0.102
+        delta-85:
+          openvpn_host: 10.85.0.103
+        echo-85:
+          openvpn_host: 10.85.0.104
+        foxtrot-85:
+          openvpn_host: 10.85.0.105
+        golf-85:
+          openvpn_host: 10.85.0.106
+        hotel-85:
+          openvpn_host: 10.85.0.107
+        india-85:
+          openvpn_host: 10.85.0.108
+        juliett-85:
+          openvpn_host: 10.85.0.109
+        kilo-85:
+          openvpn_host: 10.85.0.110
+        lima-85:
+          openvpn_host: 10.85.0.111
+        mike-85:
+          openvpn_host: 10.85.0.112
+        november-85:
+          openvpn_host: 10.85.0.113
+        oscar-85:
+          openvpn_host: 10.85.0.114
+        papa-85:
+          openvpn_host: 10.85.0.115
+        quebec-85:
+          openvpn_host: 10.85.0.116
+        romeo-85:
+          openvpn_host: 10.85.0.117
+        sierra-85:
+          openvpn_host: 10.85.0.118
+        tango-85:
+          openvpn_host: 10.85.0.119
+        uniform-85:
+          openvpn_host: 10.85.0.120
+        victor-85:
+          openvpn_host: 10.85.0.121
+        whiskey-85:
+          openvpn_host: 10.85.0.122
+        xray-85:
+          openvpn_host: 10.85.0.123
+        yankee-85:
+          openvpn_host: 10.85.0.124

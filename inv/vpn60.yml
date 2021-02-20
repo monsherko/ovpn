@@ -1,0 +1,35 @@
+---
+all:
+  children:
+    ovpn_servers:
+      hosts:
+        'sher1':
+          openvpn_server_hostname: 185.161.209.135
+          ansible_password: eFeNnjEce9
+          openvpn_proto: tcp
+          openvpn_port: 6094
+          openvpn_server_network: 10.60.0.0
+          # openvpn_server_netmask: 255.255.255.0
+          openvpn_redirect_gateway: false
+    ovpn_clients:
+      hosts:
+        alpha-60:
+          openvpn_host: 10.60.0.100
+        bravo-60:
+          openvpn_host: 10.60.0.101
+        charlie-60:
+          openvpn_host: 10.60.0.102
+        delta-60:
+          openvpn_host: 10.60.0.103
+        echo-60:
+          openvpn_host: 10.60.0.104
+        foxtrot-60:
+          openvpn_host: 10.60.0.105
+        golf-60:
+          openvpn_host: 10.60.0.106
+        hotel-60:
+          openvpn_host: 10.60.0.107
+        india-60:
+          openvpn_host: 10.60.0.108
+        juliett-60:
+          openvpn_host: 10.60.0.109

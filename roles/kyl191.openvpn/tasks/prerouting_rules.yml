@@ -1,0 +1,13 @@
+- name: Add prerouting rules
+  iptables:
+    table: nat
+    chain: PREROUTING
+    protocol: {{ item.split(':')[4] }}
+    destination: {{ item.split(':')[0] }}
+    port: {{ item.split(':')[1] }}
+    jump: DNAT
+    action: insert
+    to-destination: {{item.split(':')[2]}}:{{item.split(':')[3]}}
+  with_items:
+    - "{{rules_prerouting}}"
+  when: openvpn_masquerade_not_snat

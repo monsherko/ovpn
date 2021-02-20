@@ -1,0 +1,1 @@
+ifconfig-push {{item.2}} {{ item.2 | regex_replace('(^.*\.).*$', '\\1') }}{{item.2.split('.')[3] | int + 1 }}

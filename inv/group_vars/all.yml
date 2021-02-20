@@ -1,0 +1,5 @@
+openvpn_compression:
+openvpn_set_dns: false
+openvpn_client_to_client: true
+openvpn_masquerade_not_snat: true
+openvpn_client_register_dns: false

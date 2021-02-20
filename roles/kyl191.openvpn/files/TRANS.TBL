@@ -1,0 +1,4 @@
+F DH.PEM;1                                                                                                                                                                                                        	dh.pem
+F OPENS000.EXT;1                                                                                                                                                                                                  	openssl-server.ext
+F OPENS001.EXT;1                                                                                                                                                                                                  	openssl-client.ext
+F OPENSSL_.EXT;1                                                                                                                                                                                                  	openssl-ca.ext

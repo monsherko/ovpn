@@ -1,0 +1,9 @@
+---
+- name: Configure & install OpenVPN Server
+  hosts: ovpn_servers
+  gather_facts: yes
+  become: yes
+  roles:
+    - role: kyl191.openvpn
+      clients: "{{ groups['ovpn_clients'] }}"
+...
